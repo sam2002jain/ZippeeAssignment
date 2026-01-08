@@ -101,7 +101,10 @@ function App() {
   };
 
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider style={{flex:1}}>
+      <View style={{paddingVertical:20, backgroundColor:'#EBBB36', alignItems:'center'}}>
+        <Text style={{fontSize:22, color:'#FFF'}}>MapApp</Text>
+      </View>
       <View style={styles.container}>
         <MapView
           provider={PROVIDER_GOOGLE}
